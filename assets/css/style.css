@@ -18,7 +18,6 @@ pre {
     font-size: 1.4rem;
     font-weight: 400;
     color: #272829;
-    white-space: pre-wrap;
 }
 
 a {
@@ -245,23 +244,34 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* ===== Highligh Text  ==== */
 #hero {
+    position: relative;
     width: 100%;
     height: 100vh;
     background: url("../img/coffe_car.jpg") top center;
     background-size: cover;
 }
-
-#hero:before {
+.active::before {
     content: "";
-    background: rgba(5, 13, 24, 0.3);
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8 !important;
+    pointer-events: none;
+    background: rgba(62, 77, 98, 0.75) !important;
+    /* transition: opacity .9s ease-in !important; */
+    transition: opacity 2s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
+}
+
+.highlight-text {
+    position: relative;
     z-index: 1;
 }
+/* ===== Highligh Text END ==== */
 
 #hero .hero-container {
     position: relative;

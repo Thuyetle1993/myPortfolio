@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight-text {
+            position: relative; /* Để có khung thực sự cho lớp nền */
+            display: inline-block; /* Đảm bảo rằng lớp nền không chiếm cả dòng */
+            transition: background-color 0.3s ease-in-out; /* Hiệu ứng chuyển đổi màu nền */
+        }
+    
+        .highlight-text::before {
+            content: ""; /* Tạo một pseudo-element trước chữ */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 0, 0.2); /* Màu nền mờ */
+            opacity: 0; /* Bắt đầu ẩn lớp nền */
+            z-index: -1; /* Đẩy lớp nền xuống phía sau */
+            pointer-events: none; /* Không ảnh hưởng đến tương tác */
+            transition: opacity 0.3s ease-in-out; /* Hiệu ứng chuyển đổi opacity */
+        }
+    
+        .highlight-text:hover::before {
+            opacity: 1; /* Hiển thị lớp nền khi hover */
+        }
+    </style>
+    
+    
+    
+</head>
+<body>
+    <p>
+        Câu này có một <span class="highlight-text">từ được làm mờ</span> khi hover vào.
+    </p>
+    
+</body>
+</html>
