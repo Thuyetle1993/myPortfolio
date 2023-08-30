@@ -137,22 +137,22 @@
   } 
   //* Change overlay when hover text
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const highlightTextList = document.querySelectorAll(".highlight-text");
-    const sectionTag = document.getElementById("hero");
+//   document.addEventListener("DOMContentLoaded", function() {
+//     const highlightTextList = document.querySelectorAll(".highlight-text");
+//     const sectionTag = document.getElementById("hero");
 
-    highlightTextList.forEach(function(highlightText) {
-        highlightText.addEventListener("mouseover", function() {
-          sectionTag.classList.add("active");
-            console.log("mouse in");
-        });
+//     highlightTextList.forEach(function(highlightText) {
+//         highlightText.addEventListener("mouseover", function() {
+//           sectionTag.classList.add("active");
+//             console.log("mouse in");
+//         });
 
-        highlightText.addEventListener("mouseout", function() {
-          sectionTag.classList.remove("active");
-            console.log("mouse out");
-        });
-    });
-});
+//         highlightText.addEventListener("mouseout", function() {
+//           sectionTag.classList.remove("active");
+//             console.log("mouse out");
+//         });
+//     });
+// });
 
   /**
    * Skills animation
