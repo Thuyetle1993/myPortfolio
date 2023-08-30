@@ -42,3 +42,6 @@
     background-clip: text !important;
     -webkit-background-clip: text !important;
 }
+.paragraph {
+    white-space: pre-wrap;
+}
