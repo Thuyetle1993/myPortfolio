@@ -324,7 +324,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-    padding: 60px 0;
+    padding: 20px 0;
     overflow: hidden;
 }
 
@@ -333,25 +333,29 @@ section {
 }
 
 .section-title {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .section-title h2 {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+    /* padding-bottom: 20px; */
     position: relative;
     color: #173b6c;
+}
+.skills-content {
+    padding-bottom: 30px;
 }
 
 .section-title h2::after {
     content: "";
     position: absolute;
     display: block;
-    width: 50px;
+    width: 70px;
     height: 3px;
-    background: #149ddd;
+    background: #e88a06;
     bottom: 0;
     left: 0;
 }

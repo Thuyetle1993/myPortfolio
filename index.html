@@ -51,10 +51,21 @@
                 color: rgb(171, 6, 56) !important;
             }
             .highlight-1 {
-                color: rgb(14,   171, 145) !important;
+                position: relative;
+                color: #173b6c!important;
                 font-size: 1.7rem;
-                font-weight: 600;
-                text-decoration: underline;
+                font-weight: 600;                
+            }
+
+            .highlight-1::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100px;
+                height: 3px;
+                background: #e88a06;
+                bottom: 0;
+                left: 0;
             }
             .highlight-2 {
                 color: rgb(14, 171, 145) !important;
@@ -255,11 +266,9 @@
                     <div class="section-title">
                         <h2>Skills</h2>
                         <div class="para-block">
-                            <pre class="paragraph">       <span class="highlight-1">FrontEnd :</span>   I have experience in building user interfaces using <span class="highlight">HTML, CSS, and JavaScript.</span>   I utilize <span class="highlight">Bootstrap</span> to create flexible and responsive designs that work seamlessly across various devices.</pre>                            
-                        </div>                        
-                        <div class="para-block">
-                            <pre class="paragraph">       <span class="highlight-1">BackEnd :</span>    During my self-learning journey and skill development, I have utilized <span class="highlight">Node.js, Express.js, and MongoDB</span>  to construct highly efficient dynamic websites. Additionally, I have acquired essential knowledge in database management, <span class="highlight">Restful API</span> implementation, and effective teamwork using <span class="highlight">Git.</span></pre>                            
-                        </div>
+                            <pre class="paragraph">       <span class="highlight-1">FrontEnd :</span>   I have experience in building user interfaces using <span class="highlight">HTML, CSS, and JavaScript.</span>   I utilize <span class="highlight">Bootstrap</span> to create flexible and responsive designs that work seamlessly across various devices.</pre>
+                            <pre class="paragraph">       <span class="highlight-1">BackEnd :</span>    During my self-learning journey and skill development, I have utilized <span class="highlight">Node.js, Express.js, and MongoDB</span>  to construct highly efficient dynamic websites. Additionally, I have acquired essential knowledge in database management, <span class="highlight">Restful API</span> implementation, and effective teamwork using <span class="highlight">Git.</span></pre>                             
+                        </div>                 
                     </div>
                     <div class="row skills-content">
                         <div class="col-lg-12 d-flex justify-content-center " data-aos="fade-up">
